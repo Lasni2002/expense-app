@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row', 
     alignItems: 'center', 
     gap: 10,
-    marginBottom: 20, // පේජ් එකේ අනිත් දේවල් වලට ඉඩ තියන්න
+    marginBottom: 20, 
   },
   logoIcon: { 
     backgroundColor: '#0A2540', 

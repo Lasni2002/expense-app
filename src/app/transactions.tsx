@@ -7,8 +7,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function AllTransactionsScreen() {
   const [transactions, setTransactions] = useState<any[]>([]);
-  const [selectedIds, setSelectedIds] = useState<string[]>([]); // Select කරපු ඒවා
-  const [isSelectionMode, setIsSelectionMode] = useState(false); // Select මෝඩ් එකේද ඉන්නේ
+  const [selectedIds, setSelectedIds] = useState<string[]>([]); 
+  const [isSelectionMode, setIsSelectionMode] = useState(false); 
   const router = useRouter();
 
   useFocusEffect(
@@ -23,7 +23,6 @@ export default function AllTransactionsScreen() {
     }, [])
   );
 
-  // එකක් Select/Deselect කරන function එක
   const toggleSelection = (id: string) => {
     if (selectedIds.includes(id)) {
       const newSelected = selectedIds.filter((item) => item !== id);
@@ -35,7 +34,6 @@ export default function AllTransactionsScreen() {
     }
   };
 
-  // Select කරපු ඔක්කොම මකන function එක
   const handleDeleteSelected = () => {
     Alert.alert(
       "Delete Selected",
